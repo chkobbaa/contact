@@ -20,6 +20,10 @@
   <meta property="og:type" content="website">
   <meta name="theme-color" content="#0a0f1e">
 
+  <link rel="icon" type="image/png" href="logo.png">
+  <link rel="apple-touch-icon" href="logo.png">
+  <meta property="og:image" content="og-preview.png">
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
@@ -38,22 +42,13 @@
     <nav class="nav" id="navbar">
       <div class="nav-inner">
         <a href="#" class="nav-brand">
-          <svg viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <circle cx="14" cy="14" r="12" stroke="url(#brandGrad)" stroke-width="2" />
-            <path d="M10 18V10l4 4 4-4v8" stroke="url(#brandGrad)" stroke-width="2" stroke-linecap="round"
-              stroke-linejoin="round" />
-            <defs>
-              <linearGradient id="brandGrad" x1="0" y1="0" x2="28" y2="28">
-                <stop stop-color="#00e5ff" />
-                <stop offset="1" stop-color="#9c5cff" />
-              </linearGradient>
-            </defs>
-          </svg>
+          <img src="logo.png" alt="NexusDev Logo" width="32" height="32" style="border-radius: 6px;">
           Nexus<span class="accent">Dev</span>
         </a>
 
         <ul class="nav-links" id="nav-links">
           <li><a href="#services">Services</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
           <li><a href="#process">Processus</a></li>
           <li><a href="#contact" class="nav-cta" style="color: black;">Contactez-nous</a></li>
         </ul>
@@ -76,6 +71,9 @@
           <span class="line">Votre idée pourrait</span>
           <span class="line gradient-text">commencer ici.</span>
         </h1>
+
+
+        <div id="ascii-container"></div>
 
         <p class="hero-subtitle">
           Nous transformons vos concepts en solutions digitales performantes —
@@ -356,6 +354,137 @@
             <h3>Livraison & Suivi</h3>
             <p>Déploiement optimisé avec un suivi continu pour garantir la performance et l'évolution.</p>
           </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== PORTFOLIO ===== -->
+    <section class="portfolio" id="portfolio">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-tag">Nos Réalisations</span>
+          <h2 class="section-title">Ce que nous avons <span class="gradient-text">construit</span></h2>
+          <p class="section-desc">Des projets réels, livrés et en production — applications, plateformes et outils.</p>
+        </div>
+
+        <div class="portfolio-grid">
+
+          <!-- Cheap -->
+          <a href="https://cheap-smoky.vercel.app" target="_blank" rel="noopener noreferrer"
+            class="portfolio-card reveal reveal-delay-1" id="project-cheap">
+            <div class="portfolio-card-inner">
+              <span class="portfolio-tag tag-web">Application Web</span>
+              <h3>Cheap</h3>
+              <p>Plateforme e-commerce moderne avec authentification, gestion de produits et paiements en ligne.</p>
+              <div class="portfolio-stack">
+                <span>Next.js</span><span>Supabase</span><span>TypeScript</span>
+              </div>
+              <span class="portfolio-link">Voir le projet →</span>
+            </div>
+          </a>
+
+          <!-- EduChat -->
+          <a href="https://educhat-psi.vercel.app" target="_blank" rel="noopener noreferrer"
+            class="portfolio-card reveal reveal-delay-2" id="project-educhat">
+            <div class="portfolio-card-inner">
+              <span class="portfolio-tag tag-web">Application Web</span>
+              <h3>EduChat</h3>
+              <p>Messagerie éducative en temps réel avec WebSocket, notifications push et présence de frappe.</p>
+              <div class="portfolio-stack">
+                <span>Next.js 16</span><span>React 19</span><span>WebSocket</span>
+              </div>
+              <span class="portfolio-link">Voir le projet →</span>
+            </div>
+          </a>
+
+          <!-- TraDesk -->
+          <a href="https://tradesk.vercel.app" target="_blank" rel="noopener noreferrer"
+            class="portfolio-card reveal reveal-delay-3" id="project-tradesk">
+            <div class="portfolio-card-inner">
+              <span class="portfolio-tag tag-web">Application Web</span>
+              <h3>TraDesk</h3>
+              <p>Plateforme de gestion de tâches et collaboration pour équipes avec suivi en temps réel.</p>
+              <div class="portfolio-stack">
+                <span>Next.js</span><span>TypeScript</span><span>Vercel</span>
+              </div>
+              <span class="portfolio-link">Voir le projet →</span>
+            </div>
+          </a>
+
+          <!-- Medina (Freelance) -->
+          <a href="https://freelance-pearl-six.vercel.app" target="_blank" rel="noopener noreferrer"
+            class="portfolio-card reveal reveal-delay-1" id="project-freelance">
+            <div class="portfolio-card-inner">
+              <span class="portfolio-tag tag-web">Application Web</span>
+              <h3>Medina</h3>
+              <p>Marketplace freelance tunisien avec escrow, paiements locaux (Orange Money, D17) et résolution de
+                litiges.</p>
+              <div class="portfolio-stack">
+                <span>React</span><span>Vite</span><span>Escrow API</span>
+              </div>
+              <span class="portfolio-link">Voir le projet →</span>
+            </div>
+          </a>
+
+          <!-- Para -->
+          <a href="https://para.bahroun.me" target="_blank" rel="noopener noreferrer"
+            class="portfolio-card reveal reveal-delay-1" id="project-para">
+            <div class="portfolio-card-inner">
+              <span class="portfolio-tag tag-site">Site Web</span>
+              <h3>Para</h3>
+              <p>Site web vitrine au design soigné, déployé via GitHub Pages avec domaine personnalisé.</p>
+              <div class="portfolio-stack">
+                <span>HTML</span><span>CSS</span><span>JavaScript</span>
+              </div>
+              <span class="portfolio-link">Voir le projet →</span>
+            </div>
+          </a>
+
+          <!-- eGrab -->
+          <a href="https://github.com/chkobbaa/eGrab" target="_blank" rel="noopener noreferrer"
+            class="portfolio-card reveal reveal-delay-2" id="project-egrab">
+            <div class="portfolio-card-inner">
+              <span class="portfolio-tag tag-ext">Extension Chrome</span>
+              <h3>eGrab</h3>
+              <p>Extension qui permet de capturer le HTML, CSS et JavaScript de n'importe quel élément sur une page web
+                en un clic.</p>
+              <div class="portfolio-stack">
+                <span>Manifest V3</span><span>JavaScript</span><span>Chrome API</span>
+              </div>
+              <span class="portfolio-link">Voir sur GitHub →</span>
+            </div>
+          </a>
+
+          <!-- API-ARM -->
+          <a href="https://github.com/chkobbaa/apiarm" target="_blank" rel="noopener noreferrer"
+            class="portfolio-card reveal reveal-delay-3" id="project-apiarm">
+            <div class="portfolio-card-inner">
+              <span class="portfolio-tag tag-tool">Outil Python</span>
+              <h3>API-ARM</h3>
+              <p>Outil d'analyse d'API qui détermine les patterns d'utilisation et imite des requêtes sécurisées
+                automatiquement.</p>
+              <div class="portfolio-stack">
+                <span>Python</span><span>CLI</span><span>OAuth2</span>
+              </div>
+              <span class="portfolio-link">Voir sur GitHub →</span>
+            </div>
+          </a>
+
+          <!-- Stealthy DevTool -->
+          <a href="https://github.com/chkobbaa/stealthy-devtool" target="_blank" rel="noopener noreferrer"
+            class="portfolio-card reveal reveal-delay-1" id="project-stealthy">
+            <div class="portfolio-card-inner">
+              <span class="portfolio-tag tag-ext">Extension Chrome</span>
+              <h3>Stealthy DevTool</h3>
+              <p>DevTools furtifs pour le navigateur — inspectez et déboguez sans ouvrir les outils développeur
+                standards.</p>
+              <div class="portfolio-stack">
+                <span>Manifest V3</span><span>JavaScript</span><span>Chrome API</span>
+              </div>
+              <span class="portfolio-link">Voir sur GitHub →</span>
+            </div>
+          </a>
+
         </div>
       </div>
     </section>
